@@ -1,4 +1,4 @@
-from package_traversal.duplicates import duplicates
+from package_traversal.dependency_graph import build_dependency_graph
 
 if __name__ == '__main__':
-    print(duplicates(["b", "a", "c", "c", "e", "a", "b", "c", "d", "c", "d"]))
+    print(build_dependency_graph('tmp/deps.json'))
